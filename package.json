@@ -1,0 +1,30 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bw-airbnbprice3/back-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bw-airbnbprice3/back-end/issues"
+  },
+  "homepage": "https://github.com/bw-airbnbprice3/back-end#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.2",
+    "pg": "^7.12.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
