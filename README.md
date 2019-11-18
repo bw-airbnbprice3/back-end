@@ -2,7 +2,7 @@
 
 ## HEROKU BASE_URL
 
-tbd
+https://airbnb-optimal-price-app.herokuapp.com
 
 ## ENDPOINTS
 
