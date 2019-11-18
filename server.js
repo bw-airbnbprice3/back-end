@@ -8,8 +8,8 @@ const server = express();
 server.use(express.json());
 
 server.use("/api/login", loginRouter);
-server.use("api/register", registerRouter);
-server.use("api/listings", listingRouter);
+server.use("/api/register", registerRouter);
+server.use("/api/listings", listingRouter);
 
 server.get("/api", (req, res) => {
   res.send("Welcome to AirBnB Optimal Price Endpoint !");
