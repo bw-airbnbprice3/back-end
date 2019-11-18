@@ -9,7 +9,7 @@ tbd
 ### Authentication
 
 | Method | Endpoint | Description |
-
+|------------|-------------|---------------|
 |POST| api/register/ | Creates a `user` using the information sent inside the `body` of the request.|
 
 |POST| api/login/ | login in a `user` using the information sent inside the `body` of the request. return a JWT token |
