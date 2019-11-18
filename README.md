@@ -14,10 +14,13 @@ https://airbnb-optimal-price-app.herokuapp.com
 | POST   | api/login/    | login in a `user` using the information sent inside the `body` of the request. return a JWT token |
 
 Example user object:
+
+```
 {
 username:"username",
 password:"password"
 }
+```
 
 ### Property Listing
 
@@ -31,6 +34,8 @@ password:"password"
 
 Example listing object:
 POST && PUT:
+
+```
 {
 "host_username":"host_username",
 "property_name":"property_name",
@@ -40,3 +45,4 @@ POST && PUT:
 "minimun_stay": 2,
 "property_amenities":"property_amenities"
 }
+```
