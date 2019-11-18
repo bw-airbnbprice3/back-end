@@ -3,12 +3,13 @@ const db = require("../data/dbConfig.js");
 module.exports = {
   register,
   login,
-  getUsers
+  getUsers,
+  remove
 };
 
 function register(newUser) {
   return db("users")
-    .insert(newUser)
+    .insert(newUser, "id")
     .then(id => findById(id));
 }
 
@@ -27,4 +28,10 @@ function findById(id) {
   return db("users")
     .where({ id: idObj })
     .select("username");
+}
+
+function remove(id) {
+  return db("users")
+    .where({ id })
+    .del();
 }

@@ -15,7 +15,9 @@ exports.up = function(knex) {
         .unsigned()
         .notNullable()
         .references("username")
-        .inTable("users");
+        .inTable("users")
+        .onUpdate("CASCADE")
+        .onDelete("CASCADE");
       tbl.string("property_name", 255).notNullable();
       tbl.string("property_type", 255).notNullable();
       tbl.string("property_location", 255).notNullable();
