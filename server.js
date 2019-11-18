@@ -11,7 +11,7 @@ server.use("/api/login", loginRouter);
 server.use("/api/register", registerRouter);
 server.use("/api/listings", listingRouter);
 
-server.get("/api", (req, res) => {
+server.get("/", (req, res) => {
   res.send("Welcome to AirBnB Optimal Price Endpoint !");
 });
 
