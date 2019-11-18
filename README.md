@@ -16,11 +16,11 @@ tbd
 
 ### Property Listing
 
-| Method | Endpoint | Description |
+| Method | Endpoint      | Description                                                                                                     |
+| ------ | ------------- | --------------------------------------------------------------------------------------------------------------- |
+| GET    | api/listings/ | get a list of properties for a particular user that has successfully logged in. Require token in request.header |
 
-|GET| api/listings/ | get a list of properties for a particular user that has successfully logged in. Require token in request.header
-
-|POST| api/listings/ | add a new listing for a particular user that has successfully logged in. Require token in request.header
+|POST| api/listings/ | add a new listing for a particular user that has successfully logged in. Require token in request.header |
 
 |GET| api/listings/:id | get a particular listing for a particular user that has successfully logged in. Requier token in request.header
 
