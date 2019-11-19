@@ -4,7 +4,6 @@ const db = require("./userModel.js");
 router.get("/", (req, res) => {
   db.getUsers()
     .then(users => res.status(200).json(users))
-    .catch(err => res.status(500).json({ message: "error, try again" }))
     .catch(err => res.status(500).json({ message: "error, try again" }));
 });
 

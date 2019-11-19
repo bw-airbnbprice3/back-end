@@ -22,6 +22,15 @@ Example user object:
 }
 ```
 
+### User
+
+| Method | Endpoint      | Description                         |
+| ------ | ------------- | ----------------------------------- |
+| GET    | api/users/    | get a list of registered users      |
+| GET    | api/users/:id | get a particular registered user    |
+| PUT    | api/users/:id | update a particular registered user |
+| DELETE | api/users/:id | delete a particular registered user |
+
 ### Property Listing
 
 | Method | Endpoint         | Description                                                                                                     |
