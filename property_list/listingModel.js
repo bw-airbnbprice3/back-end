@@ -15,10 +15,15 @@ function find() {
       "u.username",
       "l.id",
       "l.property_name",
-      "l.property_type",
-      "l.property_location",
+      "l.room_type",
+      "l.address",
+      "l.neighborhood_group",
+      "l.neighborhood",
+      "l.availability_of_year",
       "l.property_price",
-      "l.minimun_stay",
+      "l.bedroom_number",
+      "l.bathroom_number",
+      "l.minimum_nights",
       "l.property_amenities"
     );
 }
