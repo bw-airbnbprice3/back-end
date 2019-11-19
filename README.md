@@ -17,8 +17,8 @@ Example user object:
 
 ```
 {
-username:"username",
-password:"password"
+    username:"username",
+    password:"password"
 }
 ```
 
@@ -37,12 +37,17 @@ POST && PUT:
 
 ```
 {
-"host_username":"host_username",
-"property_name":"property_name",
-"property_type":"property_type",
-"property_location":"property_location",
-"property_price":10,
-"minimun_stay": 2,
-"property_amenities":"property_amenities"
+    host_username:"username"
+    property_name: "property name",
+    room_type: "room type",
+    address: "address",
+    neighborhood_group: "neighborhood group",
+    neighborhood: "neighborhood",
+    availability_of_year: 200,
+    property_price: 100,
+    bedroom_number: 3,
+    bathroom_number: 2,
+    minimun_nights: 3,
+    property_amenities: "gym, swimming pool"
 }
 ```

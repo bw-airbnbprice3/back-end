@@ -19,10 +19,15 @@ exports.up = function(knex) {
         .onUpdate("CASCADE")
         .onDelete("CASCADE");
       tbl.string("property_name", 255).notNullable();
-      tbl.string("property_type", 255).notNullable();
-      tbl.string("property_location", 255).notNullable();
+      tbl.string("room_type", 255).notNullable();
+      tbl.string("address", 255).notNullable();
+      tbl.string("neighborhood_group", 255).notNullable();
+      tbl.string("neighborhood", 255).notNullable();
+      tbl.integer("availability_of_year").notNullable();
       tbl.float("property_price").notNullable();
-      tbl.integer("minimun_stay").notNullable();
+      tbl.integer("bedroom_number");
+      tbl.integer("bathroom_number");
+      tbl.integer("minimun_nights").notNullable();
       tbl.text("property_amenities");
     });
 };

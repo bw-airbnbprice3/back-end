@@ -4,31 +4,31 @@ exports.seed = function(knex) {
       id: 1,
       host_username: "testusername",
       property_name: "test name",
-      property_type: "test type",
-      property_location: "test location",
+      room_type: "test type",
+      address: "test address",
+      neighborhood_group: "test neighborhood group",
+      neighborhood: "test neighborhood",
+      availability_of_year: 200,
       property_price: 100,
-      minimun_stay: 1,
-      property_amenities: "test amenities"
+      bedroom_number: 3,
+      bathroom_number: 2,
+      minimun_nights: 3,
+      property_amenities: "gym, swimming pool"
     },
     {
       id: 2,
       host_username: "testusername",
       property_name: "test name 2",
-      property_type: "test type 2",
-      property_location: "test location 2",
-      property_price: 200,
-      minimun_stay: 2,
-      property_amenities: "test amenities 2"
-    },
-    {
-      id: 3,
-      host_username: "testusername",
-      property_name: "test name 3",
-      property_type: "test type 3",
-      property_location: "test location 3",
-      property_price: 300,
-      minimun_stay: 3,
-      property_amenities: "test amenities 3"
+      room_type: "test type 2",
+      address: "test address 2",
+      neighborhood_group: "test neighborhood group 2",
+      neighborhood: "test neighborhood 2",
+      availability_of_year: 250,
+      property_price: 150,
+      bedroom_number: 2,
+      bathroom_number: 1,
+      minimun_nights: 2,
+      property_amenities: "recreational room"
     }
   ]);
 };
