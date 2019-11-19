@@ -29,7 +29,7 @@ function find() {
 }
 function add(newListing) {
   return db("listings")
-    .insert(newListing)
+    .insert(newListing, "id")
     .then(id => findById(id[0]));
 }
 
