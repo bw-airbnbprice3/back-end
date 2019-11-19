@@ -19,10 +19,10 @@ exports.up = function(knex) {
         .onUpdate("CASCADE")
         .onDelete("CASCADE");
       tbl.string("property_name", 255).notNullable();
-      tbl.string("room_type", 255).notNullable();
+      tbl.integer("room_type").notNullable();
       tbl.string("address", 255).notNullable();
-      tbl.string("neighborhood_group", 255).notNullable();
-      tbl.string("neighborhood", 255).notNullable();
+      tbl.integer("neighborhood_group").notNullable();
+      tbl.integer("neighborhood").notNullable();
       tbl.integer("availability_of_year").notNullable();
       tbl.float("property_price").notNullable();
       tbl.integer("bedroom_number");
