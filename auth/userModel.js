@@ -4,7 +4,9 @@ module.exports = {
   register,
   login,
   getUsers,
-  remove
+  getUserById,
+  remove,
+  update
 };
 
 function register(newUser) {
@@ -15,6 +17,18 @@ function register(newUser) {
 
 function getUsers() {
   return db("users");
+}
+
+function getUserById(id) {
+  return db("users")
+    .where({ id })
+    .first();
+}
+
+function update(id, user) {
+  return db("users")
+    .where({ id })
+    .update(user);
 }
 
 function login(username) {

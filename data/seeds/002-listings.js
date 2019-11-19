@@ -12,7 +12,7 @@ exports.seed = function(knex) {
       property_price: 100,
       bedroom_number: 3,
       bathroom_number: 2,
-      minimun_nights: 3,
+      minimum_nights: 3,
       property_amenities: "gym, swimming pool"
     },
     {
@@ -27,7 +27,7 @@ exports.seed = function(knex) {
       property_price: 150,
       bedroom_number: 2,
       bathroom_number: 1,
-      minimun_nights: 2,
+      minimum_nights: 2,
       property_amenities: "recreational room"
     }
   ]);

@@ -47,7 +47,7 @@ POST && PUT:
     property_price: 100,
     bedroom_number: 3,
     bathroom_number: 2,
-    minimun_nights: 3,
+    minimum_nights: 3,
     property_amenities: "gym, swimming pool"
 }
 ```

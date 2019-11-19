@@ -27,7 +27,7 @@ exports.up = function(knex) {
       tbl.float("property_price").notNullable();
       tbl.integer("bedroom_number");
       tbl.integer("bathroom_number");
-      tbl.integer("minimun_nights").notNullable();
+      tbl.integer("minimum_nights").notNullable();
       tbl.text("property_amenities");
     });
 };
