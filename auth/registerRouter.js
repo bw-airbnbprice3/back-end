@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("./userModel.js");
+const db = require("../user/userModel.js");
 
 router.post("/", (req, res) => {
   db.register(req.body)
