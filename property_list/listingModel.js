@@ -34,6 +34,12 @@ function add(newListing) {
     .then(id => findById(id[0]));
 }
 
+function findById(id) {
+  return db("listings")
+    .where({ id })
+    .first();
+}
+
 function findByNameAndId(username, id) {
   return db("users as u")
     .join("listings as l", "u.username", "=", "l.host_username")

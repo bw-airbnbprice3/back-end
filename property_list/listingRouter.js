@@ -12,7 +12,10 @@ router.post("/:username", restricted, (req, res) => {
   const newListing = req.body;
   db.add(newListing)
     .then(list => res.status(200).json(list))
-    .catch(err => res.status(500).json({ message: "error, try again" }));
+    .catch(err => {
+      console.log(err);
+      res.status(500).json({ message: "error, try again" });
+    });
 });
 
 router.get("/:username/:id", restricted, (req, res) => {
