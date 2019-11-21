@@ -3,14 +3,15 @@ const db = require("../data/dbConfig.js");
 module.exports = {
   find,
   add,
-  findById,
+  findByNameAndId,
   update,
   remove
 };
 
-function find() {
+function find(username) {
   return db("users as u")
     .join("listings as l", "u.username", "=", "l.host_username")
+    .where({ "u.username": username })
     .select(
       "u.username",
       "l.id",
@@ -33,19 +34,31 @@ function add(newListing) {
     .then(id => findById(id[0]));
 }
 
-function findById(id) {
+function findByNameAndId(username, id) {
+  return db("users as u")
+    .join("listings as l", "u.username", "=", "l.host_username")
+    .where({ "u.username": username, "l.id": id });
+}
+async function update(username, id, changed) {
+  const listing = await findUserListing(username, id);
+
   return db("listings")
-    .where({ id })
+    .where({ id: listing.id })
+    .update(changed);
+}
+async function remove(username, id) {
+  const listing = await findUserListing(username, id);
+  console.log(listing);
+  return db("listings")
+    .del()
+    .where({ id: listing.id });
+}
+
+function findUserListing(username, id) {
+  const listing = db("users as u")
+    .select("l.id")
+    .join("listings as l", "u.username", "=", "l.host_username")
+    .where({ "u.username": username, "l.id": id })
     .first();
-}
-function update(id, changed) {
-  return db("listings")
-    .where({ id })
-    .update(changed)
-    .then(num => findById(id));
-}
-function remove(id) {
-  return db("listings")
-    .where({ id })
-    .del();
+  return listing;
 }
