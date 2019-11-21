@@ -37,9 +37,9 @@ Example user object:
 | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | GET    | api/listings/:username     | get a list of properties for a particular user that has successfully logged in. Require token in request.header |
 | POST   | api/listings/:username     | add a new listing for a particular user that has successfully logged in. Require token in request.header        |
-| GET    | api/listings/:username/:id | get a particular listing for a particular user that has successfully logged in. Requier token in request.header |
-| PUT    | api/listings/:username/:id | update a listing for a particular user that has successfully logged in. Requier token in request.header         |
-| DELETE | api/listings/:username/:id | delete a listing for a particular user that has successfully logged in. Requier token in request.header         |
+| GET    | api/listings/:username/:id | get a particular listing for a particular user that has successfully logged in. Require token in request.header |
+| PUT    | api/listings/:username/:id | update a listing for a particular user that has successfully logged in. Require token in request.header         |
+| DELETE | api/listings/:username/:id | delete a listing for a particular user that has successfully logged in. Require token in request.header         |
 
 Example listing object:
 POST && PUT:
